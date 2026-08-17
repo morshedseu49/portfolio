@@ -1,0 +1,13 @@
+:root {
+    --red: #ea2a35;
+    --red-light: #ff5c6a;
+    --dark: #393939;
+    --dark-900: #1b1b1b;
+    --dark-800: #242424;
+    --dark-700: #2f2f2f;
+    --light: #f5f6f8;
+    --text-muted: #a8adb7;
+    --gradient-primary: linear-gradient(135deg, #ea2a35 0%, #ff5c6a 100%);
+    --gradient-dark: linear-gradient(160deg, #1b1b1b 0%, #393939 100%);
+    --gradient-border: linear-gradient(135deg, rgba(234, 42, 53, .6), rgba(255, 92, 106, .15));
+}
