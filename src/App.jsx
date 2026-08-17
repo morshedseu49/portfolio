@@ -8,7 +8,6 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
-import Education from './sections/Education';
 import Contact from './sections/Contact';
 import Footer from './components/layout/Footer';
 import BackToTop from './components/common/BackToTop';
@@ -38,7 +37,6 @@ export default function App() {
         <Experience />
         <Skills />
         <Projects />
-        <Education />
         <Contact />
       </main>
       <Footer />

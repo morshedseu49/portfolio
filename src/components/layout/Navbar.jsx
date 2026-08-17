@@ -36,10 +36,6 @@ export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top main-nav ${isScrolled ? 'scrolled' : ''}`} id="mainNav">
       <div className="container">
-        <a className="navbar-brand brand" href="#home" onClick={(e) => handleNavClick(e, 'home')}>
-          <span className="brand-badge">GM</span>
-          <span className="brand-text">Golam<span className="brand-dot">Morshed</span></span>
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -51,7 +47,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navMenu">
-          <ul className="navbar-nav ms-auto align-items-lg-center">
+          <ul className="navbar-nav mx-auto align-items-lg-center">
             {navLinks.map((link) => (
               <li className="nav-item" key={link.id}>
                 <a
@@ -63,11 +59,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="nav-item ms-lg-2">
-              <a className="btn btn-gradient btn-sm nav-cta" href="/Golam_Morshed_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-download"></i> Resume
-              </a>
-            </li>
           </ul>
         </div>
       </div>

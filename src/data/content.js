@@ -36,16 +36,6 @@ export const certifications = [
 ];
 
 export const publication = {
-  badge: 'International Journal · Feb 2023',
   title: 'Forecasting Student Clothes Purchases Intention in Bangladesh: A Machine Learning Approach',
-  authors: 'Md. Golam Morshed, et al.',
-  journal: 'International Journal of Recent Technology and Engineering (IJRTE)',
   link: 'https://www.ijrte.org/portfolio-item/F74950311623',
 };
-
-export const whatIDeliver = [
-  'Secure, scalable RESTful APIs',
-  'Optimized database performance',
-  'Responsive, user-centric UI',
-  'Timely, production-ready delivery',
-];
