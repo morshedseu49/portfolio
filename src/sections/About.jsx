@@ -50,19 +50,6 @@ export default function About() {
                 <div className="org">{education.university}</div>
                 <div className="period">{education.period}</div>
               </div>
-
-              <h4 style={{ color: '#fff', fontWeight: 700, fontSize: '1.05rem' }} className="mb-3 mt-4">
-                <i className="bi bi-patch-check me-2 gradient-text"></i>Certifications
-              </h4>
-              {certifications.map((cert, i) => (
-                <div className="cert-item" key={i}>
-                  <i className={`bi ${cert.icon}`}></i>
-                  <div>
-                    <h5>{cert.title}</h5>
-                    <p>{cert.org}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
@@ -82,6 +69,28 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="section-head text-start reveal mt-5" style={{ margin: '0 0 24px' }}>
+          <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '1.2rem' }}>
+            <i className="bi bi-patch-check me-2 gradient-text"></i>Certifications
+          </h3>
+        </div>
+        <div className="row g-4">
+          {certifications.map((cert, i) => (
+            <div className="col-md-6 reveal" key={i}>
+              <div className="glass-card">
+                <div className="card-top-line"></div>
+                <div className="cert-item">
+                  <i className={`bi ${cert.icon}`}></i>
+                  <div>
+                    <h5>{cert.title}</h5>
+                    <p>{cert.org}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

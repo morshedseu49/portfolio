@@ -487,6 +487,27 @@ body {
     transition: width 1.4s cubic-bezier(.25, .6, .25, 1);
 }
 
+.quick-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.fact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.fact-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.fact-label {
+    color: var(--text-muted);
+    font-size: .92rem;
+    font-weight: 500;
+}
+
 /* ---------- Projects ---------- */
 .project-card {
     position: relative;
@@ -572,26 +593,20 @@ body {
 .edu-card .period { color: var(--text-muted); font-size: .85rem; }
 .cert-item {
     display: flex;
-    gap: 16px;
-    padding: 20px;
-    background: rgba(255,255,255,.04);
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 16px;
-    margin-bottom: 16px;
-    transition: border-color .3s ease, transform .3s ease;
+    gap: 12px;
+    align-items: flex-start;
 }
-.cert-item:hover { border-color: rgba(234,42,53,.4); transform: translateX(6px); }
 .cert-item i {
-    width: 46px; height: 46px;
+    width: 36px; height: 36px;
     flex-shrink: 0;
     display: grid; place-items: center;
-    border-radius: 12px;
+    border-radius: 10px;
     background: var(--gradient-primary);
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
-.cert-item h5 { color: #fff; font-size: .98rem; font-weight: 700; margin: 0 0 4px; }
-.cert-item p { color: var(--text-muted); font-size: .86rem; margin: 0; }
+.cert-item h5 { color: #fff; font-size: .95rem; font-weight: 700; margin: 0 0 4px; }
+.cert-item p { color: var(--text-muted); font-size: .84rem; margin: 0; }
 
 /* ---------- Publication ---------- */
 .pub-card h4 { color: #fff; font-size: 1.1rem; font-weight: 700; line-height: 1.4; }

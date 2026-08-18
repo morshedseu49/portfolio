@@ -1,9 +1,8 @@
-import { useScrollReveal, useSkillBarReveal } from '../hooks/useScrollReveal';
-import { skillCategories, skillBars, specializations } from '../data/skills';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+import { skillCategories, specializations } from '../data/skills';
 
 export default function Skills() {
   const ref = useScrollReveal();
-  const barRef = useSkillBarReveal();
 
   return (
     <section id="skills" className="section" ref={ref}>
@@ -32,39 +31,39 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="row justify-content-center mt-2" ref={barRef}>
-          <div className="col-lg-10">
-            <div className="skill-bar-group reveal">
-              <div className="row g-4">
-                {skillBars.map(([name, pct], i) => (
-                  <div className="col-md-6" key={i}>
-                    <div className="skill-bar-item">
-                      <div className="skill-bar-label">
-                        <span>{name}</span>
-                        <span className="gradient-text">{pct}%</span>
-                      </div>
-                      <div className="skill-bar-track">
-                        <div className="skill-bar-fill" data-width={pct}></div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row justify-content-center mt-3">
-          <div className="col-lg-10">
+        <div className="row g-4 mt-4">
+          <div className="col-lg-8">
             <div className="glass-card reveal">
               <div className="card-top-line"></div>
-              <h4 style={{ color: '#fff', fontWeight: 700, fontSize: '1.05rem' }} className="mb-2">
+              <h4 style={{ color: '#fff', fontWeight: 700, fontSize: '1.05rem' }} className="mb-3">
                 <i className="bi bi-stars me-2 gradient-text"></i>Specializations
               </h4>
               <div className="skill-badges">
                 {specializations.map((s, i) => (
                   <span className="skill-badge" key={i}>{s}</span>
                 ))}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="glass-card reveal reveal-delay-1">
+              <div className="card-top-line"></div>
+              <h4 style={{ color: '#fff', fontWeight: 700, fontSize: '1.05rem' }} className="mb-3">
+                <i className="bi bi-lightning me-2 gradient-text"></i>Quick Facts
+              </h4>
+              <div className="quick-facts">
+                <div className="fact-item">
+                  <span className="fact-number gradient-text">3+</span>
+                  <span className="fact-label">Years Experience</span>
+                </div>
+                <div className="fact-item">
+                  <span className="fact-number gradient-text">10+</span>
+                  <span className="fact-label">Projects Delivered</span>
+                </div>
+                <div className="fact-item">
+                  <span className="fact-number gradient-text">5+</span>
+                  <span className="fact-label">Technologies</span>
+                </div>
               </div>
             </div>
           </div>

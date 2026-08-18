@@ -18,7 +18,7 @@ high-quality, timely feature delivery and system performance enhancements.`;
 
 export const education = {
   degree: 'Bachelor of Science in Computer Science & Engineering',
-  university: 'Southeast University · Dhaka, Bangladesh',
+  university: 'Southeast University',
   period: 'Jan 2018 — Dec 2022',
 };
 
